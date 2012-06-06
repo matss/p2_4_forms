@@ -1,0 +1,16 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                                controllers.Application.index(name : String ?= "Unknown")
+GET		/guest							 controllers.Application.index(name : String = "Honored Guest")
+GET     /$id<[0-9]+>                     controllers.Application.indexId(id : Int)
+GET     /:name                           controllers.Application.index(name : String)
+GET     /users/new                       controllers.Users.createForm
+GET     /users/new2                      controllers.Users.createForm2
+POST    /users                           controllers.Users.create
+POST    /users2                          controllers.Users.create2
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)

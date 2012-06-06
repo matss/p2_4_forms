@@ -1,0 +1,25 @@
+@(target: play.api.mvc.Call)
+
+@main("Create User") {
+
+<form method="post" action="@target"> 
+	<p>
+	   <label for="firstName">First Name</label>
+	   <input type="text" id="firstName" name="firstName" value="">  
+	</p>
+	<p>
+	   <label for="lastName">Last Name</label>
+	   <input type="text" id="lastName" name="lastName" value="">
+	</p>
+	<p>     
+	   <label for="email">Email</label>
+	   <input type="text" id="email" name="email" value=""> 
+	</p>
+	<p>
+	   <button type="submit">Submit</button>  
+	</p>
+</form>
+
+}          
+
+          
