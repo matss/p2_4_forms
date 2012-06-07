@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rest-client version="2.4"><request><http-version>1.1</http-version><http-follow-redirects>true</http-follow-redirects><URL>http://localhost:9000/users2</URL><method>POST</method><body content-type="application/json" charset="UTF-8">{ "firstName" : "Mats" }</body></request></rest-client>
